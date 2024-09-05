@@ -15,5 +15,14 @@ public class Crab extends Actor
      */
     public void act()
     {
+        if (Greenfoot.isKeyDown("up")) {
+            move(5);
+        }
+        if (Greenfoot.isKeyDown("left")) {
+            turn(-3);
+        }
+        if (Greenfoot.isKeyDown("right")) {
+            turn(3);
+        }
     }
 }
